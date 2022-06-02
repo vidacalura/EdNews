@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-btn{
+
+    @apply text-white text-5xl w-24 h-24 cursor-pointer transition-all hover:bg-orange-500;
+
+}
+.active{
+
+    @apply bg-orange-500 opacity-60;
+
+}
+.video{
+
+    @apply rounded w-[750px] h-[421px]; 
+
+}
+.mb-20{
+
+    margin-bottom: 5rem;
+
+}

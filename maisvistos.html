@@ -6,36 +6,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome (Emojis) -->
+        <script src="https://kit.fontawesome.com/de94e301a2.js" crossorigin="anonymous"></script>
+        <!-- API Youtube -->
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="JS/maisvistos.js" defer>  </script>
         <link rel="stylesheet" type="text/css" href="CSS/output.css">
         <title> EdNews </title>
 
     </head>
 
-
-    <body>
+    <body class="h-full w-full bg-slate-900 text-white">
         
-        <nav>
-            <!-- Vídeos mais recentes -->
+        <div class="flex justify-center w-full h-full">
 
-            <!-- Vídeos mais vistos -->
+            <nav class="fixed left-0 bg-orange-400 w-24 h-full">
+                <!-- Vídeos mais recentes -->
+                <a href="index.html#"> <button class="nav-btn" title="Vídeos mais recentes"> 
+                    <i class="fa fa-play"></i> 
+                </button> </a>
 
-            <!-- Estatísticas -->
+                <!-- Vídeos mais vistos -->
+                <a href="maisvistos.html#"> <button class="active nav-btn" title="Vídeos mais vistos"> 
+                    <i class="fa-solid fa-trophy"></i>
+                 </button> </a>
 
-        </nav>
+                <!-- Estatísticas -->
+                <a href="stats.html#"> <button class="nav-btn" title="Estatísticas de Ednaldo"> 
+                    <i class="fa-solid fa-chart-line"></i> 
+                </button> </a>
 
-        <main>
-            <!-- Vídeo -->
-            <div class="">
-                <!-- Nome -->
+            </nav>
 
-                <!-- Data -->
-                
-                <!-- Vídeo -->
+            <main class="">
 
-            </div>
+                <!-- Vídeos -->
+                <div class="videos-box w-[56rem] py-8 px-12 mt-16 rounded-lg bg-slate-800 shadow-lg">
+                    
+                </div>
 
-
-        </main>
+            </main>
+        </div>
 
     </body>
 

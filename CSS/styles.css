@@ -17,8 +17,33 @@
     @apply rounded w-[750px] h-[421px]; 
 
 }
+.h2-stats{
+
+    @apply text-2xl font-bold;
+
+}
+.p-total{
+
+    @apply text-2xl absolute right-72;
+
+}
+.m-0-auto{
+
+    margin: 0 auto;
+
+}
 .mb-20{
 
     margin-bottom: 5rem;
+
+}
+.text-3xl{
+
+    font-size: 1.875rem;
+
+}
+.font-bold{
+
+    font-weight: bold;
 
 }

@@ -3,25 +3,17 @@ const videosBox = document.querySelector(".videos-box");
 const key = "AIzaSyCZ2emG-XPu1zm0Hfw8F9O_Wvy6Ln4HZ3M";
 const ednaldo_ID = "UCLzb8VJaApoEZ6Bbmmq-oEA";
 
-const request_url = `https://www.googleapis.com/youtube/v3/search?key=${key}&channelId=${ednaldo_ID}&part=snippet,id&order=date&maxResults=20`;
+const request_url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${ednaldo_ID}&maxResults=3&order=viewCount&key=${key}`;
 
 showVideo();
-//updateVideos();
 
-/*async function updateVideos(){
-
-    if (scrollY > 1000){
-        showVideo();
-    }
-
-}*/
 
 function showVideo(){
 
     fetch(request_url)
         .then(response => response.json())
         .then(data => {
-            for (let i = 0; i < 10; i++){
+            for (let i = 0; i < 3; i++){
                 const videoDiv = document.createElement("div");
                 const videoTitle = document.createElement("h2");
                 const videoDate = document.createElement("p");
@@ -54,5 +46,3 @@ function showVideo(){
     });
 
 }
-// Fazer mais funções
-// Juntar classes em classes melhores

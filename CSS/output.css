@@ -492,6 +492,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -504,16 +508,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 56rem;
 }
 
-.w-auto {
-  width: auto;
+.w-60 {
+  width: 15rem;
+}
+
+.w-\[62\%\] {
+  width: 62%;
 }
 
 .justify-center {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-slate-900 {
@@ -531,6 +556,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -541,17 +571,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3rem;
 }
 
-.text-center {
-  text-align: center;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-white {
@@ -595,6 +634,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
+.h2-stats {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-weight: bold;
+}
+
+.p-total {
+  position: absolute;
+  right: 18rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.m-0-auto{
+  margin: 0 auto;
+}
+
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+}
+
+.font-bold{
+  font-weight: bold;
 }
